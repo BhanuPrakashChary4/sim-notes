@@ -1,0 +1,20 @@
+# Ignore Node.js modules
+**/node_modules/
+
+# Ignore environment files
+.env
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore npm debug log
+npm-debug.log*
+
+# Backend specific ignores
+/backend/node_modules/
+/backend/.env       # Backend environment file if it's separate from root
+
+# Frontend specific ignores
+/frontend/build/    # Build output directory for React app
+/frontend/node_modules/
