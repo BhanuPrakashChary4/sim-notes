@@ -20,13 +20,14 @@ Create ```.env``` file inside ```backend``` directory and copy the following cod
 MONGO_URI=Your mongodb URI
 ```
 
-```
 # Run the App
 Go to ```backend``` and ```frontend``` directory and start the server
+
 ```
 cd backend
 npm start
 ```
+
 ```
 cd frontend
 npm start
