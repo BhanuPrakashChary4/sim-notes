@@ -2,8 +2,10 @@
 import express from 'express';
 import connectDB from './config/db.js';
 import notesRouter from './routes/notes.js';
+import cors from 'cors';
 
 const app = express();
+app.use(cors());
 
 // Connect to MongoDB
 connectDB();
@@ -12,7 +14,7 @@ connectDB();
 app.use(express.json());
 
 // Routes
-app.use('/api/notes', notesRouter);
+app.use('/routes/notes', router);
 
 const PORT = process.env.PORT || 5000;
 

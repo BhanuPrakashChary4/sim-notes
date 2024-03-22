@@ -11,6 +11,9 @@ import {
 } from '../controllers/notesController.js';
 
 router.get('/', getNotes);
+// router.get('/',(req,res) =>{
+//   res.send('welcome home');
+// })
 router.get('/:id', getNoteById);
 router.post('/', createNote);
 router.put('/:id', updateNote);

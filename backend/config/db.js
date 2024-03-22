@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 
 const connectDB = async () => {
   try {
-    const connection = await mongoose.connect('mongo://mongoadmin:mongoadmin@mongo:2701', {
+    const connection = await mongoose.connect(process.env.MONGODB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
@@ -16,5 +16,3 @@ const connectDB = async () => {
 
 export default connectDB;
 
-
-// mongodb://localhost:27017/notesDB
